@@ -36,7 +36,6 @@ class BukuterbitController extends Controller
      */
     public function store(Request $request)
     {
-        ddd($request);
         $request->validate([
             'id_buku' => 'unique:bukuterbit,id_buku'
         ]);
@@ -97,7 +96,6 @@ class BukuterbitController extends Controller
     public function update(Request $request, $id_buku)
     {
         $bukuterbit = bukuterbit::findOrfail($id_buku);
-        // ddd($request);
         $gambar = $bukuterbit->gambar;
 
         $request->validate([
