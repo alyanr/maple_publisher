@@ -17,10 +17,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/maple-publisher', function () {
-    return view('index');
-});
-
 Route::get('/detail-1', function () {
     return view('portfolio-details');
 });
